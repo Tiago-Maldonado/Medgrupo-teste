@@ -1,0 +1,38 @@
+{
+  "schools": [
+    {
+      "id": 4,
+      "name": "Rubens de Faria e Souza",
+      "address": "Avenida Dom José",
+      "schoolPrincipal": "Alexandre",
+      "classes": [
+        {
+          "id": 4,
+          "subject": "Educação Física",
+          "teacherName": "Pedro",
+          "studentsAmount": "40"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Anglo",
+      "address": "Rua Campolim",
+      "schoolPrincipal": "Ana",
+      "classes": [
+        {
+          "id": 2,
+          "subject": "Matematica",
+          "teacherName": "Leandro",
+          "studentsAmount": "15"
+        },
+        {
+          "id": 12,
+          "subject": "Química",
+          "teacherName": "Pablo",
+          "studentsAmount": "40"
+        }
+      ]
+    }
+  ]
+}
