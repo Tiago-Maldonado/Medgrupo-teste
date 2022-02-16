@@ -1,0 +1,17 @@
+<mat-sidenav-container color="primary">
+	<mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true">
+		<mat-nav-list class="sidenav__nav-list">
+			<a mat-button [routerLink]="[MAIN_ROUTE.Menu]" class="sidenav__link" routerLinkActive="active-link">
+				<i class="material-icons material-icons-outlined"> home </i>
+				<span class="aligned-with-icon">Menu inicial</span>
+			</a>
+			<a mat-button [routerLink]="[MAIN_ROUTE.Schools]" class="sidenav__link" routerLinkActive="active-link">
+				<i class="material-icons"> school </i>
+				<span class="aligned-with-icon"> Escolas </span>
+			</a>
+		</mat-nav-list>
+	</mat-sidenav>
+</mat-sidenav-container>
+<div class="content" breakpoint="content--">
+	<router-outlet> </router-outlet>
+</div>

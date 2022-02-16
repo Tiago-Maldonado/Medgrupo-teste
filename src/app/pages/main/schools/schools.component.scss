@@ -1,0 +1,72 @@
+:host{
+    .school {
+		margin-top: 1rem;
+
+		.expanded {
+			background: transparent;
+			&__detail {
+				display: block;
+				border-top: 1px solid var(--color-light-gray);
+				background: var(--color-background-layout);
+				border-radius: 6px;
+				margin: 1rem;
+			}
+
+			&__table {
+				box-shadow: none;
+				border-bottom: 1px solid var(--color-light-gray);
+				padding: 0.5rem;
+				&__column {
+					text-align: center;
+					&--actions {
+						border: none !important;
+						text-align: center;
+					}
+				}
+			}
+		}
+    }
+
+    .form {
+        &__table {
+            width: 100%;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+            &__header {
+                background-color: var(--color-background-layout);
+                text-align: center !important;
+            }
+    
+            &__column {
+                text-align: center !important;
+                &--actions {
+                    width: 10%;
+                    button {
+                        display: contents;
+                        cursor: pointer;
+    
+                        mat-icon {
+                            margin-left: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    tr.example-detail-row {
+		height: 0;
+	}
+
+	tr.example-expanded-row:hover {
+		cursor: pointer;
+	}
+
+	.school-row td {
+		border-bottom-width: 0;
+	}
+
+	::ng-deep .mat-sort-header-container {
+		justify-content: center !important;
+	}
+}

@@ -1,0 +1,24 @@
+<mat-toolbar class="navbar">
+	<mat-toolbar-row>
+        <img
+            class="navbar__logo"
+            fxFlex.xs="35"
+            fxFlex.sm="30"
+            fxFlex.md="25"
+            fxFlex="15"
+            src="../../../../assets/img/prefeitura-logo.png"
+            alt="Prefeitura Logo"
+        />
+		<span class="navbar__example-spacer"></span>
+
+		<!-- menu web -->
+		<div class="navbar__menu">
+			<div class="navbar__menu--avatar" style="background-image: url('{{ avatar }}')"></div>
+			<div class="navbar__menu--box">
+				<div class="navbar__menu--profile">Administrador</div>
+				<div class="navbar__menu--name">{{ userName }}</div>
+			</div>
+		</div>
+		<!-- menu web -->
+	</mat-toolbar-row>
+</mat-toolbar>

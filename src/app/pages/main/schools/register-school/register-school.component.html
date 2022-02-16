@@ -1,0 +1,28 @@
+<div fxLayout="column">
+    <form [formGroup]="formSchoolData">
+        <div fxLayout="row" fxFlex="100" fxLayout.xs="column" fxLayout.sm="column" fxFlexFill fxLayoutGap="10px">
+            <mat-form-field fxFlex="25" color="accent" appearance="outline" floatLabel="always">
+                <mat-label>Nome da escola</mat-label>
+                <input matInput formControlName="name"/>
+            </mat-form-field>
+            <mat-form-field fxFlex="25" color="accent" appearance="outline" floatLabel="always">
+                <mat-label>Bairro</mat-label>
+                <input matInput formControlName="address"/>
+            </mat-form-field>
+            <mat-form-field fxFlex="25" color="accent" appearance="outline" floatLabel="always">
+                <mat-label>Nome do diretor(a)</mat-label>
+                <input matInput formControlName="schoolPrincipal"/>
+            </mat-form-field>
+        </div>
+    </form>
+    <div
+        fxFlex="30"
+        fxLayoutAlign="flex-start"
+        fxLayoutGap="10px"
+    >
+        <button mat-raised-button color="primary" [routerLink]="MAIN_ROUTE.Schools" (click)="confirmSchoolRegister()">
+            <i class="material-icons"> add_to_queue </i> Concluir registro
+        </button>
+    </div>
+</div>
+
